@@ -2,71 +2,67 @@
 <html>
 
 <head>
-    <title>Page Title</title>
     <style>
         body {
-            margin-top: 0;
-            border: 0.5px solid black;
+            background-color: FloralWhite;
+            margin: 0;
         }
         
-        .bigheader {
-            background-color: #f5deb4;
-        }
-        
-        .bigheader h1 {
-            color: #20b8ef;
+        header {
             text-align: center;
-        }
-        
-        .sheader h2 {
-            color: #4683b1;
-            text-align: center;
-        }
-        
-        .reporter {
-            display: block;
-        }
-        
-        .reporter img {
-            float: left;
-        }
-        
-        .fc {
-            display: flex;
-            clear: both;
-        }
-        
-        .menu {
-            background-color: #fff8dc;
-            float: left;
-            width: 50%;
-        }
-        
-        .menu li {
-            list-style-type: none;
-            background-color: #f5deb4;
-            padding: 0.5em;
-            margin: 0.5em;
-            font-weight: bold;
-        }
-        
-        .back {
-            text-align: right;
         }
         
         footer {
-            background-color: #f5deb4;
-            position: sticky;
-            bottom: 0;
-            color: #7edecd;
-            font-weight: bold;
             text-align: center;
+            background-color: Bisque;
+            color: Aquamarine;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            margin: 10% 10% 10% 20%;
+            background-color: bisque;
+        }
+        
+        a {
+            margin-left: 10%;
+            font-weight: bold;
+        }
+        
+        .bigheader {
+            padding: 10px;
+            background-color: Bisque;
+            color: DeepSkyBlue;
+        }
+        
+        .sheader {
+            color: CornflowerBlue;
+        }
+        
+        .reporter {
+            column-count: 2;
+            width: 30%;
+        }
+        
+        .menu {
+            position: absolute;
+            height: 70%;
+            width: 20%;
+            background-color: AntiqueWhite;
+        }
+        
+        .s1 {
+            padding-left: 20%;
         }
     </style>
+    <title>Page Title</title>
 </head>
 
 <body>
-
 
     <header class="bigheader">
         <h1>SW Studio TODAY</h1>
@@ -76,8 +72,8 @@
     </header>
 
     <div class="reporter">
-        <img class="report-fig" src="https://previews.123rf.com/images/gmast3r/gmast3r1809/gmast3r180900199/109840480-brunette-businessman-avatar-man-face-profile-icon-concept-online-support-service-male-cartoon-charac.jpg" alt="picture" width=150>Reported
-        by <br>Mr. or Ms. Xxxx xxxx<br> (nickname)<br> ID yyyyyyyy<br><br><time datetime="2020-02-28">Feb 28, 2020</time>
+        <img class="report-fig" src="https://previews.123rf.com/images/gmast3r/gmast3r1809/gmast3r180900199/109840480-brunette-businessman-avatar-man-face-profile-icon-concept-online-support-service-male-cartoon-charac.jpg" alt="picture" width=150>
+        <div> Reported by <br>Mr. or Ms. Xxxx xxxx<br> (nickname)<br> ID yyyyyyyy<br><br><time datetime="2020-02-28">Feb 28, 2020</time></div>
     </div>
 
     <div class="fc">
@@ -135,7 +131,6 @@
         </div>
     </div>
     <footer>ce.kmitl all rights reserved & copyright 2020</footer>
-
 </body>
 
 </html>
