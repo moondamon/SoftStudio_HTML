@@ -3,24 +3,47 @@
 
 <head>
     <style>
-        .card {
-            position: absolute;
-            width: 40%;
-            margin: 10px;
+        div img {
+            position: relative;
+            max-width: 400px;
+            /* Maximum width */
+            margin: 0 auto;
+            /* Center it */
+            position: fixed;
+            right: 0px;
+            bottom: 10px;
         }
         
-        .title {
-            /* position: absolute; */
-            top: 50px;
-            background-color: gray;
+        img {
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+        }
+        
+        div div {
+            position: fixed;
+            /* Position the background text */
+            right: 0px;
+            bottom: 0px;
+            /* At the bottom. Use top:0 to append it to the top */
+            background: rgb(255, 255, 255);
+            /* Fallback color */
+            background: rgba(255, 255, 255, 0.5);
+            /* Black background with 0.5 opacity */
+            color: #ffffff;
+            /* Grey text */
+            width: 400px;
+            /* Full width */
+            height: 100px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="card">
-        <img src="https://images.pexels.com/photos/1019980/pexels-photo-1019980.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="picture" width="100%">
-        <div class="title">
+    <div>
+        <img src="https://images.pexels.com/photos/1019980/pexels-photo-1019980.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="picture">
+        <div>
             <h3>Test Test</h3>
             test test testtest test testtest test testtest test testtest test testtest test testtest test testtest test testtest test testtest test testtest test testtest test testtest test testtest test testtest test testtest test </div>
     </div>
