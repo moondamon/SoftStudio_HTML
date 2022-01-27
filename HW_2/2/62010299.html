@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <style>
+      body {
+            margin-top: 0;
+            border: 0.5px solid black;
+        }
+        
+      .flex-container{
+         padding-left: 250px;
+         padding-right: 250px;
+      }
+      .flex-container-bottom{
+         display: flex;
+         justify-content: flex-end; 
+      }
+   </style>
    <title>Page Title</title>
 </head>
 <body>
    <div>
        <h1>This is a Flexbox exercise</h1>
    </div>
-   <div>
+   <div class="flex-container">
        <div>
        </div>
-       <div class="title">
+       <div>
            <p>
                <h1>1</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus ipsum quis sapien tempor, vel pharetra diam aliquam. Maecenas tempor urna id auctor dignissim. Nulla pellentesque consectetur egestas. Donec imperdiet dignissim
                magna in ultrices. Integer dictum ligula vel magna rhoncus, et consequat diam venenatis. Ut laoreet sollicitudin lorem, scelerisque fringilla quam porttitor id. Nam ante sem, tempor non sapien ac, imperdiet tincidunt libero. Curabitur
@@ -29,7 +44,7 @@
        <div>
        </div>
    </div>
-   <div>
+   <div class="flex-container-bottom">
        <div>
            <p>
                <h1>1</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus ipsum quis sapien tempor, vel pharetra diam aliquam. Maecenas tempor urna id auctor dignissim. Nulla pellentesque consectetur egestas. Donec imperdiet dignissim
