@@ -60,6 +60,11 @@
             font-weight: 700;
             font-size: 1.75em;
         }
+        /* profile */
+        
+        .profile {
+            margin: 7%;
+        }
         
         .profile-img {
             width: 200px;
@@ -79,7 +84,7 @@
         /* second column */
         
         #second {
-            padding: 0 20%;
+            padding: 5%;
             font-family: 'prompt', sans-serif;
             background-color: #211717;
             color: #ffffff;
@@ -92,6 +97,7 @@
         }
         
         .second-text {
+            text-align: start;
             color: #ffffff;
         }
         /* third column */
@@ -212,45 +218,59 @@
     <section id="second">
         <h1 class="second-title">FATE by COCKTAIL From Illusion CGI Studio</h1>
         <div class="row justify-content-start">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://adaymagazine.com/wp-content/uploads/2021/12/Draft-till-done_Cocktail_Content_c22_20211222-1024x683.jpg" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>อิลลูชั่นไม่ใช่ Illustrator แต่เป็น Conceptual artist </h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+            <div class="col-6">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://adaymagazine.com/wp-content/uploads/2021/12/Draft-till-done_Cocktail_Content_c22_20211222-1024x683.jpg" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>อิลลูชั่นไม่ใช่ Illustrator แต่เป็น Conceptual artist </h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://adaymagazine.com/wp-content/uploads/2021/12/Draft-till-done_Cocktail_Content_c21_20211222-1024x683.jpg" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>เราต้องเห็นตรงกันว่าความหมายตรงนี้มันเท่ากับอะไร เล่าเรื่องอะไร นำเสนอในแง่มุมไหน</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://adaymagazine.com/wp-content/uploads/2021/12/Draft-till-done_Cocktail_Content_c20_20211222-1024x683.jpg" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>ถ้าเราได้ฟังเรื่องราวเกี่ยวกับโมนาลิซ่า ภาพจะมีคุณค่ามากขึ้นกว่าเดิม</h5>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://adaymagazine.com/wp-content/uploads/2021/12/Draft-till-done_Cocktail_Content_c21_20211222-1024x683.jpg" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>เราต้องเห็นตรงกันว่าความหมายตรงนี้มันเท่ากับอะไร เล่าเรื่องอะไร นำเสนอในแง่มุมไหน</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://adaymagazine.com/wp-content/uploads/2021/12/Draft-till-done_Cocktail_Content_c20_20211222-1024x683.jpg" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>ถ้าเราได้ฟังเรื่องราวเกี่ยวกับโมนาลิซ่า ภาพจะมีคุณค่ามากขึ้นกว่าเดิม</h5>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
+                </div>
+            </div>
+            <div class="col-6 second-text">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; หลายปีมาแล้ว กิจกรรมที่เกี่ยวข้องกับวงการโฆษณาทั่วโลก มักจะเปลี่ยนชื่อหรือคำที่ใช้โปรโมตจาก Advertising เป็น Creativity</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เหตุผลที่เปลี่ยนนั้นมีทั้งในเชิงเนื้อหาและการตลาด ไม่ว่าอย่างไรสิ่งนี้ก็สะท้อนว่าวงการโฆษณาไม่ต้องการจะอยู่อย่างโดดเดี่ยว แต่อยากเชื่อมโยงกับคนที่ทำงานกับความคิดสร้างสรรค์ในหลายแวดวง
+                    เพื่อให้เกิดผลลัพธ์ใหม่ๆ หลังจากนั้นเราก็ได้เห็นคนจากวงการดนตรี ศิลปะ บันเทิง เพื่อสังคมและอีกหลายวงการทำงานคอลแลบกันสนุกสนาน มีแคมเปญที่น่าสนใจเกิดขึ้นโดยไม่ได้นิยามตัวเองว่าเป็นโฆษณาอีกต่อไป</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;น่าเสียดายที่สิ่งนี้ไม่ค่อยเกิดในบ้านเรา การขับเคลื่อนให้เกิดความร่วมมือข้ามสายในอุตสาหกรรมสร้างสรรค์ไทยยากกว่าที่คิด ไม่ใช่เพราะเราไม่เก่ง แต่เหมือนมีกำแพงบางอย่างที่ยากจะก้าวข้ามไป</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021 เป็นปีที่น่าจับตาสำหรับอุตสาหกรรมสร้างสรรค์ไทย เราได้เห็นผลงานชิ้นสำคัญที่พยายามเชื่อมโยงกับสองศิลปินต่างสายยอดฝีมือ นั่นคือปกอัลบั้ม FATE ของ COCKTAIL วงดนตรีลายเซ็นชัดที่ผ่านร้อนผ่านหนาวมาถึง
+                    20 ปี ภาพปกนี้สร้างสรรค์โดย Illusion CGI Studio บริษัทสร้างสรรค์ภาพประกอบงานโฆษณาอันดับ 1 ของโลก</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;draft till done ตอนนี้ชวนทีมงานอิลลูชั่น ได้แก่ สุรชัย พุฒิกุลางกูร Founder & CEO ศุภชัย อุไรรัตน์ CGI Director และสมศักดิ์ ไปเร็ว Production Director เสริมด้วยครีเอทีฟอย่าง อัศวิน
+                    พานิชวัฒนา เราไม่ได้ชวนพวกเขามาเล่าแค่วิธีการทำภาพ แต่ยังเล่าเบื้องหลังการข้ามกำแพง ชวนศิลปินนักสร้างสรรค์จากสองวงการมาร่วมงานกันเป็นครั้งแรก ด้วยความหวังว่าจะมีงานแบบนี้เกิดขึ้นอีกในอนาคต </p>
             </div>
         </div>
-        <img src="https://media.discordapp.net/attachments/936250850387566614/936251628334481468/S__19677187.jpg?width=503&height=671" alt="zen" class="profile-img">
-        <em>62010282 Nattapat Arunkitjaroen</em>
+        <div class="profile">
+            <img src="https://media.discordapp.net/attachments/936250850387566614/936251628334481468/S__19677187.jpg?width=503&height=671" alt="zen" class="profile-img">
+            <em>62010282 Nattapat Arunkitjaroen</em>
+        </div>
     </section>
 
 
