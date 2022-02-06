@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 
     <!-- Style Css -->
     <style>
@@ -72,28 +75,26 @@
             border-radius: 100%;
             object-fit: cover;
         }
+        /* title */
+        
+        .title {
+            margin: 0 0 5% 0;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
         /* first column */
         
         #first {
             background-color: #ffffff;
-        }
-        
-        .first-title {
             color: black;
         }
         /* second column */
         
         #second {
-            padding: 5%;
+            padding: 3% 5%;
             font-family: 'prompt', sans-serif;
             background-color: #211717;
             color: #ffffff;
-        }
-        
-        .second-title {
-            margin: 0 0 5% 0;
-            font-size: xx-large;
-            font-weight: bolder;
         }
         
         .second-text {
@@ -103,29 +104,45 @@
         /* third column */
         
         #third {
-            background-color: #CE7BB0;
-        }
-        
-        .third-title {
-            color: #ffffff;
+            background-color: #ffffff;
+            color: black;
         }
         /* fourth column */
         
         #fourth {
-            background-color: #FFBCD1;
-        }
-        
-        .fourth-title {
-            color: #ffffff;
+            background-color: #F58B54;
         }
         /* fifth column */
         
         #fifth {
-            background-color: #6867AC;
+            background-color: #ffffff;
         }
         
-        .fifth-title {
-            color: #ffffff;
+        .fifth-img {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            object-position: 100% 0%;
+            border-radius: 100%;
+        }
+        
+        .fifth-text {
+            text-align: start;
+        }
+        
+        .youtube {
+            text-align: center;
+        }
+        /* footer */
+        
+        footer {
+            background-color: #211717;
+            height: 50px;
+            color: white;
+        }
+        
+        i {
+            margin: 0 10px;
         }
     </style>
 
@@ -205,7 +222,7 @@
     <!-- column -->
 
     <section id="first">
-        <h1 class="first-title">First Title</h1>
+        <h1 class="title">First Title</h1>
         <p>first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first
             title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first
             title first title
@@ -216,7 +233,7 @@
 
 
     <section id="second">
-        <h1 class="second-title">FATE by COCKTAIL From Illusion CGI Studio</h1>
+        <h1 class="title">FATE by COCKTAIL From Illusion CGI Studio</h1>
         <div class="row justify-content-start">
             <div class="col-6">
                 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
@@ -275,7 +292,7 @@
 
 
     <section id="third">
-        <h1 class="first-title">First Title</h1>
+        <h1 class="title">First Title</h1>
         <p>first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first
             title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first
             title first title
@@ -286,7 +303,7 @@
 
 
     <section id="fourth">
-        <h1 class="first-title">First Title</h1>
+        <h1 class="title">First Title</h1>
         <p>first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first
             title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first
             title first title
@@ -297,14 +314,38 @@
 
 
     <section id="fifth">
-        <h1 class="first-title">First Title</h1>
-        <p>first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first
-            title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first title first
-            title first title
-        </p>
-        <img src="https://media.discordapp.net/attachments/933239020677386280/936249831494656071/B516432F-FCC2-41F4-B7B5-047A0C83872F.jpg" alt="munggon" class="profile-img">
-        <em>62010355 Tanapol  Kampoh</em>
+        <h1 class="title">Stamp Apiwat Soundtrack of My Life | EARGASM BY PAT BOONSINSUKH EP.35</h1>
+        <div class="row">
+            <div class="col-6">
+                <img src="https://adaymagazine.com/wp-content/uploads/2022/02/Eargasm_-Stamp_Content_c5_20220204-768x1024.jpg" alt="stamp apiwat" class="fifth-img">
+            </div>
+            <div class="col-6 fifth-text">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คุณทราบหรือไม่ว่า เพลงดังของ แสตมป์ อภิวัชร์ ส่วนใหญ่เป็นเพลง Soundtrack?</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ล่าสุด แสตมป์มีผลงานซาวนด์แทร็กอีกครั้ง กับภาพยนตร์เรื่อง One for the Road ของผู้กำกับ บาส นัฐวุฒิ ซึ่งมีหว่องกาไวเป็นโปรดิวเซอร์ กับเพลงที่มีชื่อว่า 'Nobody Knows' </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EARGASM จึงชวนแสตมป์มาเล่าถึงเรื่องราวเบื้องหลังการทำงาน ที่ใช้เวลาหลายปีกว่าจะออกมาเป็นเพลงเวอร์ชั่นนี้ เรียกว่าจากแรกเริ่มเดิมทีจะทำหนังมิวสิคัล แต่กลับกลายมาเป็นหนังโร้ดมูฟวี่กันเลยทีเดียว
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;และไหนๆ ก็คุยกันเรื่องซาวนด์แทร็กแล้ว แพท บุญสินสุข ยังให้แสตมป์-ผู้ซึ่งบอกว่าตัวเองเป็นคนชื่นชอบเพลงซาวนด์แทร็กมาก พูดถึงซาวนด์แทร็กหนังที่เขาชื่นชอบอีกด้วย </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Playlist ของแสตมป์จะมีเพลงอะไรบ้างนั้น ไปฟังกันเต็มๆ ได้ที่ EARGASM BY PAT BOONSINSUKH EP.35</p>
+                <div class="youtube"><iframe loading="lazy" title="แสตมป์ อภิวัชร์ Soundtrack of My Life | EARGASM BY PAT BOONSINSUKH EP.35" width="500" height="281" src="https://www.youtube.com/embed/WlEbXBkzryM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe></div>
+
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="https://media.discordapp.net/attachments/933239020677386280/936249831494656071/B516432F-FCC2-41F4-B7B5-047A0C83872F.jpg" alt="munggon" class="profile-img">
+            <em>62010355 Tanapol  Kampoh</em>
+        </div>
     </section>
+    <footer id="footer">
+        <div class="container-fluid">
+            <i class="social-icon fab fa-twitter"></i>
+            <i class="social-icon fab fa-facebook-f"></i>
+            <i class="social-icon fab fa-instagram"></i>
+            <i class="social-icon fas fa-envelope"></i>
+        </div>
+        <p>© Copyright 2022 Pran Pran</p>
+    </footer>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
