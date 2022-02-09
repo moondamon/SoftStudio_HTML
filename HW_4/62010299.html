@@ -8,10 +8,12 @@
     onclick="document.getElementById('time').innerHTML = Date()">
     <a id="time" onclick="timeColor()">Click me to display Date and Time.</a></button>
 
-    <a onclick="member('members')" onmouseover="onHoverButton()" onmouseout="offHoverButton()"><br><br>Members</a>
+    <h3 onclick="member('members')" style="color: pink;">members</h3>
 
     <p id="members"></p>
-    
+
+    <button id="member" onclick="myFunction()">members</button>
+
     <script>
         var numcolor = 0;
         var backcolor = 5;
@@ -26,6 +28,7 @@
             var color = ["red","blue","green","pink","orange","yellow"]
             document.getElementById("time").style.color = color[numcolor];
             document.getElementById("button").style.background = color[backcolor];
+
             if (numcolor == 5 || backcolor == 0){
                 numcolor = 0;
                 backcolor = 5;
@@ -38,6 +41,11 @@
 
         function member() {
             document.getElementById("members").innerHTML = members;
+        }
+
+        function myFunction() {
+            var h = document.getElementById("member");
+            h.insertAdjacentHTML("afterend", "<li>My new paragraph</li>");
         }
     </script>
 </body>
