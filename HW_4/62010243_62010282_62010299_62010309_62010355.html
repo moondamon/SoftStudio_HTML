@@ -14,8 +14,8 @@
         <p id="demo">Click to show date time</p>
     </button>
 
-    <a onclick="showMemberButton()" onmouseover="onHoverButton()" onmouseout="offHoverButton()" id="member"><br><br>Members</a>
-    <div id="member-btn"></div>
+    <a onclick="showMemberButton()" onmouseover="onHoverButton()" onmouseout="offHoverButton()" id="member-btn"><br><br>Members</a>
+    <div id="members"></div>
 
     <h1>Snapshots</h1>
     <ul>
@@ -61,17 +61,20 @@
                 listView.appendChild(listViewItem);
             }
 
-            return listView;
+            // return listView;
+            document.getElementById("member-btn").appendChild(listView);
         }
 
         showMemberButton = () => {
-            document.getElementById("member-btn").appendChild(createMemberList(memberList));
+            // document.getElementById("member-btn").appendChild(createMemberList(memberList));
+            // document.getElementById("members").innerHTML = `"${createMemberList(memberList)}"`;
+            createMemberList(memberList)
         }
         onHoverButton = () => {
-            document.getElementById("member").style.background = "yellow";
+            document.getElementById("member-btn").style.background = "yellow";
         }
         offHoverButton = () => {
-            document.getElementById("member").style.background = "white";
+            document.getElementById("member-btn").style.background = "white";
         }
 
     </script>
