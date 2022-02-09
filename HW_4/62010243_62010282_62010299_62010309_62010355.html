@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My First JavaScript</h1>
+    <button onclick="date()">
+    <p id="demo">Click to show date time</p>
+</button>
+
+    <p>Members</p>
+    <!-- <ul>
+    <li>
+
+    </li>
+</ul> -->
+    <h1>Snapshots</h1>
+    <ul>
+        <li>
+            Fireworks
+        </li>
+        <li>
+            Fireworks
+        </li>
+        <li>
+            Fireworks
+        </li>
+        <li>
+            Fireworks
+        </li>
+    </ul>
+    <img src="https://pbs.twimg.com/media/EzxxRJ9VcAI_fTl?format=jpg&name=small">
+    <script>
+        function date() {
+            var date = new Date();
+            document.getElementById("demo").innerHTML = date;
+        }
+    </script>
+</body>
+
+</html>
