@@ -4,16 +4,17 @@
 
     <h2>My First JavaScript</h2>
 
-    <button type="button"
+    <button id="button"
     onclick="document.getElementById('time').innerHTML = Date()">
     <a id="time" onclick="timeColor()">Click me to display Date and Time.</a></button>
 
-    <h3 onclick="member('members')" style="color: pink;">members</h3>
+    <a onclick="member('members')" onmouseover="onHoverButton()" onmouseout="offHoverButton()"><br><br>Members</a>
 
     <p id="members"></p>
     
     <script>
         var numcolor = 0;
+        var backcolor = 5;
         const members = [];
             members[0]= "Mook";
             members[1]= "Zen";
@@ -22,13 +23,16 @@
             members[4]= "Tan";
     
         function timeColor() {
-            var color = ["red","blue","green"]
+            var color = ["red","blue","green","pink","orange","yellow"]
             document.getElementById("time").style.color = color[numcolor];
-            if (numcolor == 2){
+            document.getElementById("button").style.background = color[backcolor];
+            if (numcolor == 5 || backcolor == 0){
                 numcolor = 0;
+                backcolor = 5;
             }
             else{
                 numcolor++;
+                backcolor--;
             }
         }
 

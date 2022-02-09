@@ -10,9 +10,9 @@
 
 <body>
     <h1>My First JavaScript</h1>
-    <button id="button1" onclick="buttonFunction()">
-        <p id="demo">Click to show date time</p>
-    </button>
+    <button id="button"
+    onclick="document.getElementById('time').innerHTML = Date()">
+    <a id="time" onclick="timeColor()">Click me to display Date and Time.</a></button>
 
     <a onclick="showMemberButton()" onmouseover="onHoverButton()" onmouseout="offHoverButton()" id="member-btn"><br><br>Members</a>
     <div id="members"></div>
@@ -34,7 +34,8 @@
     </ul>
     <img src="https://pbs.twimg.com/media/EzxxRJ9VcAI_fTl?format=jpg&name=small">
     <script>
-
+        var numcolor = 0;
+        var backcolor = 5;
         let color = ['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink', 'brown', 'black', 'white'], i = 0
         let memberList = ['Noppawat', 'Noppawat', 'Noppawat', 'Noppawat', 'Noppawat']
         function date() {
@@ -51,6 +52,20 @@
             dateButton()
         }
 
+        function timeColor() {
+            var color = ["red","blue","green","pink","orange","yellow"]
+            document.getElementById("time").style.color = color[numcolor];
+            document.getElementById("button").style.background = color[backcolor];
+            if (numcolor == 5 || backcolor == 0){
+                numcolor = 0;
+                backcolor = 5;
+            }
+            else{
+                numcolor++;
+                backcolor--;
+            }
+        }
+
         createMemberList = (memberList) => {
 
             var listView = document.createElement('ul');
@@ -62,7 +77,7 @@
             }
 
             // return listView;
-            document.getElementById("member-btn").appendChild(listView);
+            document.getElementById("members").appendChild(listView);
         }
 
         showMemberButton = () => {
