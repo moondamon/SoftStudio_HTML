@@ -10,16 +10,13 @@
 
 <body>
     <h1>My First JavaScript</h1>
-    <button onclick="date()">
-    <p id="demo">Click to show date time</p>
-</button>
+    <button id="button1" onclick="buttonFunction()">
+        <p id="demo">Click to show date time</p>
+    </button>
 
-    <p>Members</p>
-    <!-- <ul>
-    <li>
+    <a onclick="showMemberButton()" onmouseover="onHoverButton()" onmouseout="offHoverButton()" id="member"><br><br>Members</a>
+    <div id="member-btn"></div>
 
-    </li>
-</ul> -->
     <h1>Snapshots</h1>
     <ul>
         <li>
@@ -37,10 +34,46 @@
     </ul>
     <img src="https://pbs.twimg.com/media/EzxxRJ9VcAI_fTl?format=jpg&name=small">
     <script>
+
+        let color = ['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink', 'brown', 'black', 'white'], i = 0
+        let memberList = ['Noppawat', 'Noppawat', 'Noppawat', 'Noppawat', 'Noppawat']
         function date() {
             var date = new Date();
             document.getElementById("demo").innerHTML = date;
         }
+        dateButton = () => {
+            document.getElementById("button1").style.background = color[i % color.length];
+            document.getElementById("demo").style.color = color[color.length % i];
+            i++;
+        }
+        buttonFunction = () => {
+            date()
+            dateButton()
+        }
+
+        createMemberList = (memberList) => {
+
+            var listView = document.createElement('ul');
+
+            for (var i = 0; i < memberList.length; i++) {
+                var listViewItem = document.createElement('li');
+                listViewItem.appendChild(document.createTextNode(memberList[i]));
+                listView.appendChild(listViewItem);
+            }
+
+            return listView;
+        }
+
+        showMemberButton = () => {
+            document.getElementById("member-btn").appendChild(createMemberList(memberList));
+        }
+        onHoverButton = () => {
+            document.getElementById("member").style.background = "yellow";
+        }
+        offHoverButton = () => {
+            document.getElementById("member").style.background = "white";
+        }
+
     </script>
 </body>
 
