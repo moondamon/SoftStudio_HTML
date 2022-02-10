@@ -14,22 +14,22 @@
     onclick="document.getElementById('time').innerHTML = Date()">
     <a id="time" onclick="timeColor()">Click me to display Date and Time.</a></button>
 
-    <a onclick="showMemberButton()" onmouseover="onHoverButton()" onmouseout="offHoverButton()" id="member-btn"><br><br>Members</a>
+    <a onclick="showMemberButton()" onmouseover="onHoverButton()" onmouseout="offHoverButton()" id="member-btn" style="color: pink;"><br><br>Members</a>
     <div id="members"></div>
 
     <h1>Snapshots</h1>
     <ul>
-        <li>
-            Fireworks
+        <li onclick="showimage('sage')">
+            <a style="color:pink;">Sage</a>
         </li>
-        <li>
-            Fireworks
+        <li onclick="showimage('pheonix')">
+            <a style="color:pink;">Pheonix</a>
         </li>
-        <li>
-            Fireworks
+        <li onclick="showimage('killjoy')">
+            <a style="color:pink;">Killjoy</a>
         </li>
-        <li>
-            Fireworks
+        <li onclick="showimage('jett')">
+            <a style="color:pink;">Jett</a>
         </li>
     </ul>
     <img src="https://pbs.twimg.com/media/EzxxRJ9VcAI_fTl?format=jpg&name=small">
@@ -37,7 +37,7 @@
         var numcolor = 0;
         var backcolor = 5;
         var nub=0;
-        let memberList = ['Noppawat', 'Noppawat', 'Noppawat', 'Noppawat', 'Noppawat']
+        let memberList = ['62010243 ณพวัฒน์ คำยอด', '62010282 ณัฐภัทร อรุณกิจเจริญ', '62010309 ตาณ ชัยวงศ์ศรีอรุณ', '62010355 ธนพล คำเพราะ', '62010299 ณิชกานต์ สุขุมจิตพิทโยทัย']
         function date() {
             var date = new Date();
             document.getElementById("demo").innerHTML = date;
@@ -90,10 +90,44 @@
             createMemberList(memberList)
         }
         onHoverButton = () => {
+            document.getElementById("member-btn").style.color = "black";
             document.getElementById("member-btn").style.background = "yellow";
         }
         offHoverButton = () => {
+            document.getElementById("member-btn").style.color = "pink";
             document.getElementById("member-btn").style.background = "white";
+        }
+        function showimage(namepic) {
+            if(namepic == 'sage'){
+                let x = document.createElement("IMG");
+                x.setAttribute("width", "400");
+                x.setAttribute("height", "400");
+                x.setAttribute("src", "https://cdn.discordapp.com/attachments/712679396334632971/941322110956093520/1644499036258.jpg");
+                document.body.appendChild(x);
+            }
+            else if(namepic == 'pheonix'){
+                let y = document.createElement("IMG");
+                y.setAttribute("width", "400");
+                y.setAttribute("height", "400");
+                y.setAttribute("src", "https://cdn.discordapp.com/attachments/712679396334632971/941322110733803562/1644499002056.jpg");
+                document.body.appendChild(y);
+            }
+            else if(namepic == 'killjoy'){
+                let y = document.createElement("IMG");
+                y.setAttribute("width", "400");
+                y.setAttribute("height", "400");
+                y.setAttribute("src", "https://cdn.discordapp.com/attachments/712679396334632971/941322110540853269/1644498981842.jpg");
+                document.body.appendChild(y);
+            }
+            else if(namepic == 'jett'){
+                let y = document.createElement("IMG");
+                y.setAttribute("width", "400");
+                y.setAttribute("height", "400");
+                y.setAttribute("src", "https://cdn.discordapp.com/attachments/712679396334632971/933271681907167272/1641834558424.jpg");
+                document.body.appendChild(y);
+            }
+            
+            
         }
 
     </script>
