@@ -13,22 +13,22 @@
     <button id="button" onclick="document.getElementById('time').innerHTML = Date()">
     <a id="time" onclick="timeColor()">Click me to display Date and Time.</a></button>
 
-    <a onclick="showMemberButton()" onmouseover="onHoverButton()" onmouseout="offHoverButton()" id="member-btn" style="color: pink;"><br><br>Members</a>
+    <a onclick="showMemberButton()" onmouseover="onHoverButton('member-btn')" onmouseout="offHoverButton('member-btn')" id="member-btn" style="color: pink;"><br><br>Members</a>
     <div id="members"></div>
 
     <h1>Snapshots</h1>
     <ul>
         <li onclick="showimage('sage')">
-            <a style="color:pink;">Sage</a>
+            <a style="color:pink;" onmouseover="onHoverButton('sage')" onmouseout="offHoverButton('sage')" id="sage">Sage</a>
         </li>
         <li onclick="showimage('pheonix')">
-            <a style="color:pink;">Pheonix</a>
+            <a style="color:pink;" onmouseover="onHoverButton('pheonix')" onmouseout="offHoverButton('pheonix')" id="pheonix">Pheonix</a>
         </li>
         <li onclick="showimage('killjoy')">
-            <a style="color:pink;">Killjoy</a>
+            <a style="color:pink;" onmouseover="onHoverButton('killjoy')" onmouseout="offHoverButton('killjoy')" id="killjoy">Killjoy</a>
         </li>
         <li onclick="showimage('jett')">
-            <a style="color:pink;">Jett</a>
+            <a style="color:pink;" onmouseover="onHoverButton('jett')" onmouseout="offHoverButton('jett')" id="jett">Jett</a>
         </li>
     </ul>
     <img src="https://pbs.twimg.com/media/EzxxRJ9VcAI_fTl?format=jpg&name=small" arl="ช้างแต่งหน้า" height="400">
@@ -65,8 +65,7 @@
             }
         }
 
-        createMemberList = (memberList) => {
-
+        showMemberButton = () => {
             var listView = document.createElement('ul');
 
             for (var i = 0; i < memberList.length; i++) {
@@ -74,27 +73,25 @@
                 listViewItem.appendChild(document.createTextNode(memberList[i]));
                 listView.appendChild(listViewItem);
             }
-
             // return listView;
             if (nub == 0) {
                 document.getElementById("members").appendChild(listView);
                 nub++;
+            } else {
+                var child = document.getElementById("members").childNodes;
+                document.getElementById("members").removeChild(child[0]);
+                nub--;
             }
-
         }
 
-        showMemberButton = () => {
-            // document.getElementById("member-btn").appendChild(createMemberList(memberList));
-            // document.getElementById("members").innerHTML = `"${createMemberList(memberList)}"`;
-            createMemberList(memberList)
+        function onHoverButton(e) {
+            document.getElementById(e).style.color = "black";
+            document.getElementById(e).style.background = "yellow";
         }
-        onHoverButton = () => {
-            document.getElementById("member-btn").style.color = "black";
-            document.getElementById("member-btn").style.background = "yellow";
-        }
-        offHoverButton = () => {
-            document.getElementById("member-btn").style.color = "pink";
-            document.getElementById("member-btn").style.background = "white";
+
+        function offHoverButton(e) {
+            document.getElementById(e).style.color = "pink";
+            document.getElementById(e).style.background = "white";
         }
 
         function showimage(namepic) {
