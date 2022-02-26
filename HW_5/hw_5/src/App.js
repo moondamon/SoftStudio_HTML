@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import './component/membercard.js';
+import Membercard from './component/membercard.js';
 
 function App() {
+  const informember = [
+    {
+      firstname:"Nichakan",
+      lastname:"Sukhumjitpitayotai",
+      id:62010299,
+      description:"คนสวยที่สุดในกลุ่ม",
+      image:"https://cdn.discordapp.com/attachments/933239020677386280/936255283469123604/IMG_20200711_115139_419.jpg"
+    }
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
