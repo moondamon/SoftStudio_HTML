@@ -21,7 +21,7 @@ function App() {
       firstname:"Nichakan",
       lastname:"Sukhumjitpitayotai",
       id:62010299,
-      description:"คนสวยที่สุดในกลุ่ม ช้างเย็ด",
+      description:"คนสวยที่สุดในกลุ่ม ช้างแต่งหน้า",
       image:"https://cdn.discordapp.com/attachments/933239020677386280/936255283469123604/IMG_20200711_115139_419.jpg"
     },
     {
